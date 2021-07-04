@@ -39,8 +39,8 @@ const graph = svg.append('g')
 
 const tooltip = svg.append('g')
     .attr('transform', `translate(${cent.x + 5}, ${cent.y - 12.5})`)
-    .attr('opacity', 1)
-    .attr('visibility', 'visible')
+    .attr('opacity', 0)
+    .attr('visibility', 'hidden')
     .attr('pointer-events', 'none')
 
 tooltip.append('rect')
