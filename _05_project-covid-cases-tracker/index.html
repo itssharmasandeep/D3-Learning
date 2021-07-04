@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Covid cases tracker</title>
+</head>
+<body class="indigo">
+
+    <header class="indigo darken-1 section">
+        <h2 class="center white-text">Covid Cases Tracker</h2>
+        <p class="flow-text grey-text center text-lighten-2">Country wise covid cases tracker...</p>
+    </header>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12 m6">
+                <form class="card">
+                    <div class="card-content">
+                        <div class="card-title indigo-text">Add data:</div>
+                        <div class="input-field">
+                            <input type="text" id="name">
+                            <label for="name">Country Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="cases">
+                            <label for="cases">Covid cases</label>
+                        </div>
+                        <div class="input-field">
+                            <button class="btn-small pink white-text" type="submit">Add data</button>
+                        </div>
+                        <p class="red-text" id="error"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12 m5 push-m1">
+                <div class="canvas"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+    <script src="graph.js"></script>
+</body>
+</html>
