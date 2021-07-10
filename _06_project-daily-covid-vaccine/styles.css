@@ -1,0 +1,8 @@
+.x-axis path, .y-axis path, .x-axis line, .y-axis line {
+    stroke: #ccc;
+}
+
+.x-axis text, .y-axis text {
+    fill: #ccc;
+    font-size: 14px;
+}

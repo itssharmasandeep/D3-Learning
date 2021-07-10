@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Covid cases tracker</title>
+</head>
+<body class="grey darken-4">
+
+    <div class="nav z-depth-0">
+        <div class="section center">
+            <h3 class="white-text center">Daily Covid Cases Tracker</h3>
+        </div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12 l5">
+                <button class="btn btn-primary" id="add-data">Add Data</button>
+            </div>
+            <div class="col s12 l6 push-l1">
+                <div class="canvas"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
